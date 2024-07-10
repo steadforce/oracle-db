@@ -3,3 +3,5 @@ oracle-db:
   persistence:
     size: 1Gi
     storageClass: standard
+    accessModes:
+      - ReadWriteOnce
