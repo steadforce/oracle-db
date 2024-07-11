@@ -6,3 +6,5 @@ oracle-db:
     accessModes:
       - ReadWriteOnce
   oracle_sid: FREE
+  enable_archivelog: true
+  oracle_edition: free
