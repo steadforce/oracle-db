@@ -1,11 +1,9 @@
 oracle-db:
   image:  container-registry.oracle.com/database/express:21.3.0-xe
   persistence:
-    size: 1Gi
+    size: 30Gi
     storageClass: standard
     accessModes:
       - ReadWriteOnce
   oracle_sid: XE
-  enable_archivelog: true
   oracle_edition: express
-  oracle_pwd: admin
