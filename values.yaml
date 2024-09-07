@@ -1,9 +1,8 @@
 oracle-db:
-  image:  container-registry.oracle.com/database/express:21.3.0-xe
+  imagePullSecrets: regcred
+  enable_archiving: true
   persistence:
     size: 30Gi
     storageClass: standard
     accessModes:
       - ReadWriteOnce
-  oracle_sid: XE
-  oracle_edition: express

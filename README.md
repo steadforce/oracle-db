@@ -12,6 +12,14 @@ The packaging is currently done manually by cloning the [repo](https://github.co
 See the [Helm docs](https://helm.sh/docs/topics/charts/#chart-dependencies)
 for details.
 
+### Credentials
+For `image pull secret` create an account on oracle repository then use the credentials to create
+the following secret.
+
+```bash
+kubectl create secret docker-registry regcred --docker-server=container-registry.oracle.com --docker-username=<username> --docker-password='<password>' -n oracle-db
+```
+
 
 ## Render helm charts locally
 
