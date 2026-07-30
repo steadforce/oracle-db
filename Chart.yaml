@@ -1,0 +1,7 @@
+apiVersion: v2
+name: oracle-db
+version: 0.1.0
+dependencies:
+- name: oracle-db
+  version: 1.0.0
+  repository: "file://charts/oracle-db-1.0.0.tgz"
